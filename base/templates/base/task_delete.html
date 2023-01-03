@@ -1,0 +1,15 @@
+{% extends 'base/wrapper.html' %}
+{% block content %}
+{% load static %}
+<div class="page-wrapper">
+    <div class="container">
+        <a class="link-back" href="{% url 'tasks' %}"><img src="{% static 'img/arrow.png' %}" width="30px" height="30px" alt="">Back</a>
+        <form method="POST" class="form-delete">
+            {% csrf_token %}
+            <p>Delete this task ?</p>
+            <input class="delete-input" type="submit" value="Delete">
+        </form>
+    </div>
+</div>
+
+{% endblock content %}

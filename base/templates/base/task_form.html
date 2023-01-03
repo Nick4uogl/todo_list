@@ -1,0 +1,20 @@
+{% extends 'base/wrapper.html' %}
+{% block content %}
+{% load static %}
+<div class="page-wrapper">
+    <div class="task-form container">
+        <a class="link-back" href="{% url 'tasks' %}"><img src="{% static 'img/arrow.png' %}" width="30px" height="30px" alt=""> <span>Back</span></a>
+    <form method="POST" class="task-form__form">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input class="task-form__btn" type="submit" value="Submit">
+    </form>
+    </div>
+    <div class="circles">
+        <div class="circle circle1"><img src="{% static 'img/circle1.svg' %}" alt=""></div>
+        <div class="circle circle2"></div>
+    </div>
+</div>
+
+
+{% endblock content %}

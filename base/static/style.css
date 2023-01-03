@@ -1,0 +1,299 @@
+/* --------- ОБНУЛЕННЯ СТИЛІВ ТЕГІВ ------------ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+/* a:link,
+a:visited {
+  text-decoration: none;
+} */
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+body {
+  line-height: 1;
+  font-family: "Roboto";
+}
+
+/* !HEADER */
+
+.header {
+  background-color: #1a232e;
+  color: #fff;
+}
+
+.header__container {
+  padding: 60px 0px 100px 0px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__user {
+  font-size: 30px;
+}
+
+.header__title {
+  margin-top: 30px;
+  font-size: 35px;
+}
+
+.circle {
+  position: absolute;
+}
+
+.circle1 {
+  top: -63px;
+  left: -400px;
+}
+
+.circle2 {
+  width: 197px;
+  height: 408px;
+  right: 200px;
+  top: -400px;
+  background: #cfecfd;
+  filter: blur(50px);
+  transform: rotate(-50.43deg);
+}
+
+.circle3 {
+    width: 504px;
+    height: 200px;
+    right: -150px;
+    bottom: -100px;
+
+    background: rgba(149, 66, 232, 0.35);
+    filter: blur(125px);
+    transform: rotate(-114.2deg);
+}
+
+/* !MAIN */
+
+.main__container {
+  position: relative;
+  z-index: 10;
+  top: -50px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px 30px 20px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 50px 5px rgba(54, 85, 170, 0.73);
+}
+
+.main__link {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__link img {
+  fill: red;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task__title {
+  font-size: 20px;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  background-color: #1a232e;
+  padding-top: 60px;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+}
+
+.container {
+    background-color: #fff;
+    height: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 50px 5px rgba(54, 85, 170, 0.73);
+}
+
+.container-lg {
+    padding: 50px;
+}
+
+.task-form__form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.task-form__btn {
+    border-radius: 5px;
+    background-color: #555A8D;
+    color: #fff;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+.task-form__form input {
+    border: 2px solid #555A8D;
+    border-radius: 3px;
+    padding: 5px;
+    display: block;
+}
+
+.task-form__form label {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#id_completed {
+    display: inline;
+}
+
+.task-form__form textarea {
+    border: 2px solid #555A8D;
+    border-radius: 3px;
+    display: block;
+}
+
+.link-back {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.login-form input {
+    border: 2px solid #1a232e;
+}
+
+.login-form__btn {
+    align-self: flex-start;
+    background-color: transparent;
+    border: none !important;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login-form__btn:hover {
+    text-decoration: none;
+}
+
+.link-register {
+    text-decoration: underline;
+}
+
+.helptext {
+    display: none;
+}
+
+.register-form {
+    margin-bottom: 40px;
+}
+
+.register-form ul {
+    display: none;
+}
+
+.register-form__btn {
+    margin-top: 20px;
+    text-decoration: underline;
+    background-color: transparent;
+    border: none !important;
+    cursor: pointer;
+}
+
+.register-form p {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form label {
+    margin-bottom: 10px;
+}
+
+.register-form input {
+    border: 2px solid #1a232e;
+}
+
+.delete-input {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.form-delete {
+    margin-top: 20px;
+}

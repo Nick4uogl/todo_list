@@ -1,0 +1,21 @@
+{% extends 'base/wrapper.html' %}
+{% block content %}
+{% load static %}
+<div class="page-wrapper page">
+    <div class="container container-lg">
+        <form method="POST" class="login-form">
+            {% csrf_token %}
+            {{form.as_p}}
+            <input class="login-form__btn" type="submit" value="Login">
+        </form>
+        
+        <p>Don`t have an account ? <a class="link-register" href="{% url 'register' %}">register</a></p>
+    </div>
+    <div class="circles">
+        <div class="circle circle1"><img src="{% static 'img/circle1.svg' %}" alt=""></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+    </div>
+</div>
+
+{% endblock content %}
